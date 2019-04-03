@@ -10,9 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import lombok.Getter;
-import lombok.Setter;
+import javax.persistence.Table;
 
 /**
  * 
@@ -23,8 +21,7 @@ import lombok.Setter;
  * @since 1.0.0
  */
 @Entity
-@Getter
-@Setter
+@Table(name = "user_laud")
 public class UserLaud implements Serializable {
 
 	/**
@@ -34,48 +31,49 @@ public class UserLaud implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "laud_id")
 	private Long laudId;
 
 	/**
 	 * 用户id
 	 */
-	@Column
+	@Column(name = "uid")
 	private Long uid;
 
 	/**
 	 * 昵称
 	 */
-	@Column
+	@Column(name = "nick_name")
 	private String nickName;
 
 	/**
 	 * 头像
 	 */
-	@Column
+	@Column(name = "head_portait")
 	private String headPortrait;
 
 	/**
 	 * 收货点赞数量
 	 */
-	@Column
+	@Column(name = "laudAmount")
 	private Integer laudAmount;
 
 	/**
 	 * 客资id
 	 */
-	@Column
+	@Column(name = "dream_id")
 	private Long dreamId;
 
 	/**
 	 * 许愿目的地
 	 */
-	@Column
+	@Column(name = "destination")
 	private String destination;
 
 	/**
 	 * 版本号
 	 */
-	@Column
+	@Column(name = "version")
 	private Integer version;
 
 }
