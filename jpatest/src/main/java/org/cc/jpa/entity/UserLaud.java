@@ -12,6 +12,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * 
  * 用户获赞信息
@@ -20,6 +23,8 @@ import javax.persistence.Table;
  * @date 2018-2-12 00:38
  * @since 1.0.0
  */
+@Getter
+@Setter
 @Entity
 @Table(name = "user_laud")
 public class UserLaud implements Serializable {
@@ -55,7 +60,7 @@ public class UserLaud implements Serializable {
 	/**
 	 * 收货点赞数量
 	 */
-	@Column(name = "laudAmount")
+	@Column(name = "laud_amount")
 	private Integer laudAmount;
 
 	/**

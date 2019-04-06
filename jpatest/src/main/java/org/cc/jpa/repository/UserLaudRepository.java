@@ -8,9 +8,9 @@ import org.springframework.data.repository.CrudRepository;
 public interface UserLaudRepository extends CrudRepository<UserLaud, Long> {
 
 	@Query(value = "SELECT * FROM user_laud", nativeQuery = true)
-	UserLaud testSubquery();
+	UserLaud getUserLaud();
 
 	@Modifying
-	@Query("UPDATE Person p SET p.name = :name WHERE p.id < :id")
-	int updatePersonById(Integer id, String updateName);
+	@Query("UPDATE UserLaud p SET p.laudId = :laudId WHERE p.nickName < :nickName")
+	int updatePersonById(Integer laudId, String nickName);
 }
