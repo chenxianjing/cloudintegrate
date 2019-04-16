@@ -1,0 +1,20 @@
+spring:
+   application:
+      name: TestClient
+
+server:
+   port: 7211
+   
+eureka:
+   passwork:
+   client:
+      serviceUrl:
+         defaultZone: http://eureka.springcloud.cn/eureka/
+         
+endpoints:
+   restart:
+      enabled: true
+   shutdown:
+      enabled: true
+   health:
+      sensitive: false
