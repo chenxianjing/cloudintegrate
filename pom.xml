@@ -21,6 +21,7 @@
 		<module>servertest</module>
 		<module>clienttest</module>
 		<module>gatewaytest</module>
+		<module>configservertest</module>
 	</modules>
 	<repositories>
 		<repository>
