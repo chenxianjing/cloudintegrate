@@ -1,6 +1,6 @@
 spring:
    application:
-      name: TestServer
+      name: RedisTestServer
       
 server:
    port: 8076
