@@ -20,6 +20,7 @@
 		<module>jpatest</module>
 		<module>servertest</module>
 		<module>clienttest</module>
+		<module>gatewaytest</module>
 	</modules>
 	<repositories>
 		<repository>
@@ -51,9 +52,11 @@
 		<lombok.version>1.16.10</lombok.version>
 		<cloud.version>Greenwich.RELEASE</cloud.version>
 		<eureka.version>1.4.6.RELEASE</eureka.version>
+		<gateway.version>2.1.0.RELEASE</gateway.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+		    <!-- cloud -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -70,6 +73,19 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-eureka</artifactId>
 				<version>${eureka.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-gateway-core</artifactId>
+				<version>${gateway.version}</version>
+				<type>test-jar</type>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-test-support</artifactId>
+				<version>${gateway.version}</version>
+				<scope>test</scope>
 			</dependency>
 			<!--lombok -->
 			<dependency>
