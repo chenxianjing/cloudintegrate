@@ -1,0 +1,13 @@
+debug: false
+server:
+   port: 7000
+spring:
+   application:
+      name:   clientTest
+   cloud:
+      config:
+         name: redis
+         label:   master
+         profile:   dev
+         uri:   http://localhost:7777
+         
