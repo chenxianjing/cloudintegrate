@@ -23,6 +23,8 @@
 		<module>gatewaytest</module>
 		<module>configservertest</module>
 		<module>configclienttest</module>
+		<module>maventest</module>
+		<module>tasktest</module>
 	</modules>
 	<repositories>
 		<repository>

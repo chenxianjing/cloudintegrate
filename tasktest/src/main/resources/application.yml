@@ -1,0 +1,13 @@
+server:
+   port: 7111
+
+spring:
+   applicaton:
+      name:   taskServer
+      
+logging:
+   level:
+      org:
+         springframework:
+            cloud:
+               task:   DEBUG 
