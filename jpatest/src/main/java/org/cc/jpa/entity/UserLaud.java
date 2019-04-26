@@ -12,6 +12,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,6 +26,8 @@ import lombok.Setter;
  * @date 2018-2-12 00:38
  * @since 1.0.0
  */
+@DynamicUpdate
+@DynamicInsert
 @Getter
 @Setter
 @Entity
