@@ -25,6 +25,7 @@
 		<module>configclienttest</module>
 		<module>maventest</module>
 		<module>tasktest</module>
+		<module>rabbitmqsevertest</module>
 	</modules>
 	<repositories>
 		<repository>
