@@ -7,9 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Receiver {
 	
+	/**
+	 * 消费
+	 * @param message
+	 */
 	@RabbitHandler
-	@RabbitListener
+	@RabbitListener(queues = "helloWorld_queue_test1")
 	public void helloWorld(String message) {
-		System.out.println("Receiver:" + message);
+		System.out.println("Receiver123:" + message);
 	}
 }
