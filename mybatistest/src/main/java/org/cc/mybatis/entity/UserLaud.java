@@ -2,14 +2,6 @@ package org.cc.mybatis.entity;
 
 import java.io.Serializable;
 
-/**
- * 
- * 用户获赞信息
- * 
- * @author chenxianjing
- * @date 2018-2-12 00:38
- * @since 1.0.0
- */
 public class UserLaud implements Serializable {
 
 	/**

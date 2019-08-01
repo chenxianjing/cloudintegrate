@@ -15,13 +15,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
-/**
- * 配置mapper扫描和事务管理
- * 
- * @author liuwei
- * @date 2017-11-01
- * @since 1.0.0
- */
 @Configuration
 @EnableTransactionManagement
 @MapperScan(basePackages = "org.cc.mapper", sqlSessionTemplateRef = "sqlSessionTemplate")

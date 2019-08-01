@@ -12,13 +12,6 @@ import org.springframework.context.annotation.Primary;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
-/**
- * druid数据源配置
- * 
- * @author liuwei
- * @date 2017-10-24
- * @since 1.0.0
- */
 @Configuration
 public class DruidDataSourceConfig {
 
