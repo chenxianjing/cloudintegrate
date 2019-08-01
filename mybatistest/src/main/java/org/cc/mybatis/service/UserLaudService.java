@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2018, Jiehun.com.cn Inc. All Rights Reserved
- */
 package org.cc.mybatis.service;
 
 import org.springframework.stereotype.Service;

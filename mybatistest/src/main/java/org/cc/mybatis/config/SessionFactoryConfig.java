@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2017, Jiehun.com.cn Inc. All Rights Reserved
- */
 package org.cc.mybatis.config;
 
 import javax.sql.DataSource;

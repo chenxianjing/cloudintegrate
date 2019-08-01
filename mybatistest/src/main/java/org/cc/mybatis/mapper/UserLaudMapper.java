@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2018, Jiehun.com.cn Inc. All Rights Reserved
- */
 package org.cc.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Param;
