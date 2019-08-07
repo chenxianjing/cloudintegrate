@@ -58,10 +58,11 @@
 		<cloud.version>Greenwich.RELEASE</cloud.version>
 		<eureka.version>1.4.6.RELEASE</eureka.version>
 		<gateway.version>2.1.0.RELEASE</gateway.version>
+		<httpclient.version>4.5.9</httpclient.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-		    <!-- cloud -->
+			<!-- cloud -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -141,6 +142,26 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.9</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.59</version>
+			</dependency>
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-annotations</artifactId>
+				<version>1.5.22</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk15on</artifactId>
+				<version>1.56</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
